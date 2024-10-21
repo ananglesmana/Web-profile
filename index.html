@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="splash-screen" id="splash-screen">
+        <h1>Welcome to My Profile Personal Website</h1>
+        <p>Redirecting...</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const splashScreen = document.getElementById('splash-screen');
+
+    // Tunggu 3 detik sebelum mengalihkan ke profile.html
+    setTimeout(() => {
+        splashScreen.style.display = 'none'; // Sembunyikan splash screen
+        window.location.href = 'profile.html'; // Arahkan ke halaman profil
+    }, 3500); // 3500 ms = 3.5 detik
+});
+
+    </script>
+</body>
+</html>

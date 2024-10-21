@@ -1,0 +1,305 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e9e9f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #1164A3, #1F487E);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+
+
+.header-content h1 {
+    font-size: 3rem;
+}
+
+/* Profile Section */
+.profile {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-info h2 {
+    font-size: 2rem;
+    color: #1F487E;
+}
+
+.profile-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #1F487E;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Global Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%; /* Full width */
+    margin: 0 auto;
+    overflow: hidden; /* Hide overflow for smooth sliding */
+}
+
+/* Adjust slider styling */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+/* Section Pendidikan */
+.education {
+    padding: 40px;
+    background-color: #e9f4ff;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-item {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.education-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #1F487E;
+}
+
+.education-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Section Connect to LinkedIn */
+.linkedin {
+    padding: 40px;
+    background-color: #f0f7ff;
+    text-align: center;
+}
+
+.linkedin h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0077b5; /* LinkedIn blue color */
+}
+
+.linkedin p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.linkedin-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0077b5; /* LinkedIn blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.linkedin-btn:hover {
+    background-color: #005b91;
+}
+
+.linkedin-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+/* Section Connect to Instagram and Facebook */
+.social-media {
+    padding: 40px;
+    background-color: #f7f9fc;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3b5998; /* Facebook blue */
+}
+
+.social-media p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.instagram {
+    background-color: #e1306c; /* Instagram color */
+}
+
+.instagram:hover {
+    background-color: #bc2a8d;
+}
+
+.facebook {
+    background-color: #3b5998; /* Facebook color */
+}
+
+.facebook:hover {
+    background-color: #2d4373;
+}
+
+.social-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+.portfolio-item {
+    min-width: 100%; /* Each item takes full width of slider */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Resize images */
+.portfolio-item img {
+    width: 70%; /* Set image to 70% of container */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Slider Controls */
+.slider-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider-controls button {
+    background-color: #1F487E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.slider-controls button:hover {
+    background-color: #1164A3;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .portfolio-item img {
+        width: 90%; /* Make image bigger on smaller screens */
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #1F487E;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
